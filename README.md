@@ -1,31 +1,33 @@
-# Frontend
-I chose Angular as the frontend due to never actually using angular before, since hiwaldo is utilizing Angular, I though now would be a great time to get my hands dirty with this tech test.
+## JS Frontend Test: Waldo Frontend API
 
-I can say this is not my best work, I wanted to include a store, which pushes users to an array if the guid is not present in the store. The goal was to show a small list of users by name and company, when a user clicks on the user angular router would open up a user profile.
+This test requires the developer to build an interface using HTML & JS to display and navigate a set of records that can be retreived via a small API.
 
-Upon experiencing difficulty with angulars http module, I decided to scrap that idea and go with something more basic, just to learn angular and still show case some of my skill.
+The API is based at `https://tools.hiwaldo.com/hiring/` and accepts `GET` requests from any location.
 
-It has taken me 3 hours to get to this point so far and I could spend all day on this, but I am now moving onto the backed test.
+An access key is required to access which is passed via the `key` parameter :
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
-Utilising bootstrap v4 css for styling.
+> Access Key: wkbHE5F94aJRUJmE924DW4KBayrxWQ3q6LY8dtKf9PV
 
-## Development server
+The API outputs 10 records per page. The pageset can be retrieved by passing the `page` parameter with the desired page ie:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> &page=2
 
-## Code scaffolding
+There are 200 records in total.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
 
-## Build
+Copy the files to your working location and preview in browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Other Information
 
-## Running unit tests
+While this is not a design oriented test, *layout and other UX considerations are in scope*!
+Consider mobiles, and the data types you'll work with and ways to display them.  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You are free to use whatever frontend tools you think are necessary or are comfortable with, this includes frameworks
+and module bundlers etc. If you do so, please detail what you have used to complete the task and why you chose to use these tools.
 
-## Running end-to-end tests
+Please direct any questions to callum@hiwaldo.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Estimated Time To Complete
+
+2-4 Hours.  Please let us know how long you spent on the task when submitting your code.
