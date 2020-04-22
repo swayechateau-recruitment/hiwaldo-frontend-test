@@ -16,12 +16,14 @@ export class UsersComponent implements OnInit{
   disableBack = true
   disableForward = false
 
-  users: Observable<User[]>;
+  users: any[];
   readonly ROOT_URL = 'https://tools.hiwaldo.com/hiring/?key=wkbHE5F94aJRUJmE924DW4KBayrxWQ3q6LY8dtKf9PV&page='
   constructor(private http: HttpClient){}
 
   getList () {
-    this.http.get(this.ROOT_URL + this.page).subscribe(res => {
+    this.http.get<any[]>(this.ROOT_URL + this.page).subscribe(res => {
+      // issue is with data, when res.data is res, dev works with no results
+      // need to find out how to work with httpclient where object has a data var
       this.users = res.data
     })
   }
