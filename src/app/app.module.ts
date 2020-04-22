@@ -6,21 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UsersComponent } from './users/users.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
-    UsersComponent,
-    TopBarComponent
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
