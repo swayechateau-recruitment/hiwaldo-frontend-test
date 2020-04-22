@@ -24,7 +24,8 @@ export class UsersComponent implements OnInit{
     this.http.get<any[]>(this.ROOT_URL + this.page).subscribe(res => {
       // issue is with data, when res.data is res, dev works with no results
       // need to find out how to work with httpclient where object has a data var
-      this.users = res.data
+      // going back to vanilla js works, not sure if best approach though
+      this.users = res['data']
     })
   }
 
